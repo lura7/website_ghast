@@ -404,8 +404,7 @@ section.about {
 
 
 .about-embeds {
-  background-image: url('src/imagens/GHAST_background_pink.png');
-  background-size: 260px;
+  background-image: url('src/imagens/GHAST_Background_Pink.svg');
   background-repeat: repeat;
   background-color: #e0f7ff; /* Um azul bem clarinho */
 }
@@ -1178,16 +1177,14 @@ body.merch-page {
 
 /* Fundo da página de Contato */
 body.contato-page {
-  background-image: url('src/imagens/GHAST_background_pink.png');
-  background-size: 260px;
+  background-image: url('src/imagens/GHAST_Background_Pink.svg');
   background-repeat: repeat;
   background-color: #e0f7ff; /* Um azul bem clarinho */
 }
 
 /* Navbar específica para a página de contato */
 .navbar-contato {
-  background-image: url('src/imagens/GHAST_background_pink.png');
-  background-size: 260px;
+  background-image: url('src/imagens/GHAST_Background_Pink.svg');
   background-repeat: repeat;
   background-color: #e0f7ff; /* Um azul bem clarinho */
 }
