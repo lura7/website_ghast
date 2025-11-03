@@ -72,7 +72,7 @@ body {
   display: flex;
   justify-content: space-between;  /* empurra extremos */
   align-items: center;
-  background-image: url('src/imagens/GHAST_background_green.svg');
+  background-image: url('src/imagens/GHAST_Background_Green.svg');
   background-size: 80px;
   background-repeat: repeat;
   background-color: #e0f7ff; /* Um azul bem clarinho */
@@ -1046,7 +1046,7 @@ section.about {
 
 /* Fundo da página de Merch */
 body.merch-page {
-  background-image: url('src/imagens/GHAST_background_green.svg');
+  background-image: url('src/imagens/GHAST_Background_Green.svg');
   background-repeat: repeat;
   background-size: 80px;
   background-color: #e0f7ff; /* Um azul bem clarinho */
