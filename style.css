@@ -1177,7 +1177,7 @@ body.merch-page {
 
 /* Fundo da página de Contato */
 body.contato-page {
-  background-image: url('src/imagens/GHAST_background_pink1.svg');
+  background-image: url('src/imagens/GHAST_background_pink.svg');
   background-repeat: repeat;
   background-color: #e0f7ff; /* Um azul bem clarinho */
   color: #fff;
