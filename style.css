@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'BPreplay';
-  src: url('src/fonts/BPreplay.otf') format('opentype');
+ src: url('src/fonts/BPreplay.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@ p {
 /* Paleta */
 :root {
   --white: #fff;
-  --purple: #432dB6;
+ --purple: #432dB6;
   --azuzinho: #8aeafa;
   --neon-pink: #ea94ff;
   --midnight: #1e1e2f;
@@ -21,7 +21,7 @@ p {
   font-family: "Bangers", system-ui;
   font-weight: 400;
   font-style: normal;
-}
+ }
 
 /* Reset básico */
 * {
@@ -33,7 +33,7 @@ p {
 body {
   background: var(--white);
   font-family: "Bangers", sans-serif;
-  line-height: 1.5;
+ line-height: 1.5;
   color: var(--white);
 }
 
@@ -44,14 +44,14 @@ body {
   width: 100%;
   padding-bottom: 2rem;
   text-align: center;
-}
+ }
 
 .navbar {
   display: flex;
   justify-content: space-between;  /* empurra extremos */
   align-items: center;
   background-color: rgba(67, 45, 182, 0.8);
-  backdrop-filter: blur(6px);
+ backdrop-filter: blur(6px);
   padding: 1rem 2rem;
   border-radius: 0;
   width: 100%;
@@ -59,14 +59,15 @@ body {
 
 .navbar-ghastcore {
   display: flex;
-  justify-content: space-between;  /* empurra extremos */
+  justify-content: space-between;
+ /* empurra extremos */
   align-items: center;
   background-color: #d9d9d9;
   backdrop-filter: blur(6px);
   padding: 1rem 2rem;
   border-radius: 0;
   width: 100%;
-}
+ }
 
 .navbar-merch {
   display: flex;
@@ -75,12 +76,25 @@ body {
   background-image: url('src/imagens/GHAST_Background_Green.svg');
   background-size: 80px;
   background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
+ background-color: #e0f7ff; /* Um azul bem clarinho */
   backdrop-filter: blur(6px);
   padding: 1rem 2rem;
   border-radius: 0;
   width: 100%;
+ }
+
+.navbar-contato {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('src/imagens/GHAST_Background_Pink.svg');
+ background-repeat: repeat;
+  background-color: #e0f7ff; /* Um azul bem clarinho */
+  padding: 1rem 2rem;
+  border-radius: 0;
+  width: 100%;
 }
+
 
 .merch-camisa {
   max-width: 600px;
@@ -89,66 +103,51 @@ body {
   color: var(--midnight);
   text-align: left;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+ transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 .merch-poster {
   max-width: 600px;
   padding: 2rem 1.5rem;
   border-radius: 20px;
   color: var(--midnight);
-  text-align: left;
+ text-align: left;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;  
 }
 .merch-adesivo {
   max-width: 600px;
-  padding: 2rem 1.5rem;
+ padding: 2rem 1.5rem;
   border-radius: 20px;
   color: var(--midnight);
   text-align: left;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;  
+ transition: transform 0.3s ease, box-shadow 0.3s ease;  
 }
 
 
 
 .logo {
   height: 100px;
-}
-/* header antigo 
-.nav-links a {
-  border: 2px solid var(--azuzinho);
-  color: var(--azuzinho);
-  padding: 0.25rem 1rem;
-  margin-left: 1rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.2s, color 0.2s;
-  font-family: 'BPreplay';
-}
-.nav-links a:hover {
-  background: var(--midnight);
-  color: var(--azuzinho);
-}
-
-*/
+  cursor: pointer; /* Adiciona feedback de clique */
+ }
 
 .nav-links a {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.2rem; /* espaço mínimo */
+  gap: 0.2rem;
+ /* espaço mínimo */
   border: 2px solid var(--azuzinho);
   color: var(--azuzinho);
-  padding: 0.25rem 0.8rem; /* voltou pro tamanho antigo */
+  padding: 0.25rem 0.8rem;
+ /* voltou pro tamanho antigo */
   margin-left: 1rem;
   border-radius: 9999px;
   font-weight: 600;
   text-decoration: none;
   font-family: 'BPreplay';
-  transition: color 0.3s ease;
+ transition: color 0.3s ease;
 }
 
 /* Estrelas sutis */
@@ -156,7 +155,8 @@ body {
 .nav-links a::after {
   content: "★";
   color: var(--azuzinho);
-  font-size: 0.7rem; /* menorzinha */
+  font-size: 0.7rem;
+ /* menorzinha */
   opacity: 0;
   transform: scale(0);
   transition: all 0.25s ease;
@@ -164,7 +164,7 @@ body {
 
 .nav-links a::before {
   margin-right: 0.25rem;
-}
+ }
 
 .nav-links a::after {
   margin-left: 0.25rem;
@@ -175,7 +175,7 @@ body {
 .nav-links a:hover::after {
   opacity: 1;
   transform: scale(1);
-}
+ }
 
 .nav-links.ghastcore a {
   border: 2px solid #432DB6;
@@ -184,7 +184,7 @@ body {
   margin-left: 1rem;
   border-radius: 9999px;
   font-weight: 600;
-  text-decoration: none;
+ text-decoration: none;
   transition: background 0.2s, color 0.2s;
   font-family: 'BPreplay';
 }
@@ -193,7 +193,7 @@ body {
 .nav-links.ghastcore a::before,
 .nav-links.ghastcore a::after {
   content: "★";
-  color: var(--purple);
+ color: var(--purple);
   font-size: 0.7rem;
   opacity: 0;
   transform: scale(0);
@@ -203,7 +203,7 @@ body {
 .nav-links.ghastcore a:hover::before,
 .nav-links.ghastcore a:hover::after {
   opacity: 1;
-  transform: scale(1);
+ transform: scale(1);
 }
 
 
@@ -215,7 +215,7 @@ body {
   font-size: 4.25rem;
   margin-top: 1.5rem;
   font-family: 'Bangers', cursive;
-  font-style: normal;
+ font-style: normal;
 }
 
 .hero-text {
@@ -223,7 +223,7 @@ body {
   margin: 0.5rem auto 0;
   font-size: 1rem;
   padding: 0 1rem;
-}
+ }
 
 .btn-area {
   display: flex;
@@ -235,13 +235,13 @@ body {
   background: #db2777;
   color: var(--white);
   font-weight: bold;
-  padding: 0.5rem 2rem;
+ padding: 0.5rem 2rem;
   border-radius: 9999px;
   border: none;
   box-shadow: 0 4px 6px rgba(0,0,0,0.3);
   cursor: pointer;
   transition: background 0.2s;
-}
+ }
 .btn-primary:hover {
   background: #f472b6;
 }
@@ -251,14 +251,14 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, var(--purple) 50%, #B9F5FF 50%);
+ background: linear-gradient(to bottom, var(--purple) 50%, #B9F5FF 50%);
   overflow: hidden;
 }
 .wave-divider::after {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/rapport_divisoria.png') repeat-x center;
   background-size: auto 60px;
 }
@@ -267,14 +267,14 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #B9F5FF 57%, var(--purple) 4%);
+ background: linear-gradient(to bottom, #B9F5FF 57%, var(--purple) 4%);
   overflow: hidden;
 }
 .wave-divider-outro::after {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/rapport2.svg') repeat-x left;
   background-size: auto 60px;
 }
@@ -283,7 +283,7 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: none;
+ background: none;
   overflow: hidden;
 }
 
@@ -292,7 +292,7 @@ body {
   position: absolute;
   top: 0; left: 0;
   width: 100%; height: 100%;
-  background: url('src/imagens/div_stars.svg') repeat-x center;
+ background: url('src/imagens/div_stars.svg') repeat-x center;
   background-size: auto 60px;
 }
 
@@ -300,7 +300,7 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #EA94FF 60%, #6e44fe 40%);
+ background: linear-gradient(to bottom, #EA94FF 60%, #6e44fe 40%);
   overflow: hidden;
 }
 
@@ -308,7 +308,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/serrilhado.svg') repeat-x center;
   background-size: auto 60px;
 }
@@ -317,7 +317,7 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #B9F5FF 60%, #6e44fe 40%);
+ background: linear-gradient(to bottom, #B9F5FF 60%, #6e44fe 40%);
   overflow: hidden;
 }
 
@@ -325,7 +325,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/serrilhado.svg') repeat-x center;
   background-size: auto 60px;
 }
@@ -334,7 +334,7 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #D1FF61 60%, #6e44fe 40%);
+ background: linear-gradient(to bottom, #D1FF61 60%, #6e44fe 40%);
   overflow: hidden;
 }
 
@@ -342,7 +342,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/serrilhado.svg') repeat-x center;
   background-size: auto 60px;
 }
@@ -350,7 +350,7 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, #d9d9d9 50%, #432dB6 50%);
+ background: linear-gradient(to bottom, #d9d9d9 50%, #432dB6 50%);
   overflow: hidden;
 }
 
@@ -358,7 +358,7 @@ body {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/rapport_roxo.svg') repeat-x center;
   background-size: auto 60px;
 }
@@ -367,17 +367,17 @@ body {
   position: relative;
   width: 100%;
   height: 60px;
-  background: linear-gradient(to bottom, var(--purple) 50%, #EA94FF 50%);
+ background: linear-gradient(to bottom, var(--purple) 50%, #EA94FF 50%);
   overflow: hidden;
 }
 .wave-divider-rosa::after {
   content: '';
   position: absolute;
   top: 0; left: 0;
-  width: 100%; height: 100%;
+ width: 100%; height: 100%;
   background: url('src/imagens/rapport_divisoria.png') repeat-x center;
   background-size: auto 60px;
-}
+ }
 
 
 
@@ -387,26 +387,29 @@ body {
 section.about {
   background-image: url('src/imagens/GHAST_Background_LightBlue.svg');
   background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
+ background-color: #e0f7ff; /* Um azul bem clarinho */
 }
 
 .about.ghastcore {
   background-image: url('src/imagens/GHAST_Background_Purple.svg');
   background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
+  background-color: #e0f7ff;
+ /* Um azul bem clarinho */
 }
 
 .about-outro {
   background-image: url('src/imagens/GHAST_Background_Purple.svg');
   background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
+  background-color: #e0f7ff;
+ /* Um azul bem clarinho */
 } 
 
 
 .about-embeds {
   background-image: url('src/imagens/GHAST_Background_Pink.svg');
   background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
+  background-color: #e0f7ff;
+ /* Um azul bem clarinho */
 }
 
 
@@ -414,39 +417,46 @@ section.about {
 /* seção cinza */
 /* fundo */
 .cinza {
-  background: #d9d9d9;       /* sua cor */
+  background: #d9d9d9;
+ /* sua cor */
   position: relative;
   overflow: visible;
-  padding: 5.5rem 0 4rem;    /* topo/baixo da seção */
+  padding: 5.5rem 0 4rem;
+ /* topo/baixo da seção */
 }
 
 /* wrapper que limita a largura e alinha o conteúdo à esquerda */
 .cinza-inner {
-  max-width: 1200px;         /* ajuste ao layout do site */
-  margin: 0 auto;            /* centraliza o bloco, mas o conteúdo  interno fica left */
-  padding: 3rem 2rem 0;           /* espaço lateral */
+  max-width: 1200px;
+ /* ajuste ao layout do site */
+  margin: 0 auto;
+ /* centraliza o bloco, mas o conteúdo  interno fica left */
+  padding: 3rem 2rem 0;
+ /* espaço lateral */
   text-align: left;          /* <-- aqui está o alinhamento à ESQUERDA */
-  position: relative;        /* necessário para z-index do texto */
-  z-index: 2;                /* fica acima do pompom */
+  position: relative;
+ /* necessário para z-index do texto */
+  z-index: 2;
+ /* fica acima do pompom */
 }
 
 /* título e texto ficam dentro do .cinza-inner, à esquerda */
 .cinza .section-title {
   text-align: left;
-  margin: 0 0 1rem 0;
+ margin: 0 0 1rem 0;
   padding: 1rem;
   font-family: 'Bangers', cursive;
   font-size: 4rem;
   color: #432DB6;
   line-height: 1.05;
-}
+ }
 
 .cinza .section-text {
   max-width: 700px;          /* comprimento do parágrafo */
   color: #432DB6;
   font-family: 'BPreplay', sans-serif;
   line-height: 1.6;
-  margin: 0 0 1rem 0;
+ margin: 0 0 1rem 0;
   text-align: left;
 }
 
@@ -454,12 +464,15 @@ section.about {
 .cinza-pompom {
   /* trocar position: relative por absolute para posicionar livremente sobre a seção */
   position: absolute;
-  top: 18px;        /* ajuste vertical — mude para corresponder ao Figma */
-  left: 6%;         /* ajuste horizontal */
+ top: 18px;        /* ajuste vertical — mude para corresponder ao Figma */
+  left: 6%;
+ /* ajuste horizontal */
   width: 320px;     /* tamanho do pompom — ajuste conforme necessário */
-  z-index: 1;       /* fica atrás do texto (.cinza-inner tem z-index:2) */
+  z-index: 1;
+ /* fica atrás do texto (.cinza-inner tem z-index:2) */
   pointer-events: none;
-  transform: translateZ(0); /* melhora performance */
+  transform: translateZ(0);
+ /* melhora performance */
 }
 
 /* opção "mais atrás" (sutileza) */
@@ -467,23 +480,14 @@ section.about {
   opacity: 0.98;
   filter: drop-shadow(0 2px 0 rgba(0,0,0,0.06));
   z-index: 0;
-}
-
-/* responsivo: reduz e reposiciona em telas menores */
-@media (max-width: 900px) {
-  .cinza-pompom {
-    top: 8px;
-    left: 4%;
-    width: 140px;
-  }
-}
+ }
 
 /* Flores decorativas no canto inferior direito */
 .flores {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 760px;
+ width: 760px;
   height: 400px;
   background: url("src/imagens/flores.svg") no-repeat bottom right;
   background-size: contain;
@@ -491,22 +495,13 @@ section.about {
 }
 
 .merch {
-  background: #D1FF61;       /* sua cor */
+  background: #D1FF61;
+ /* sua cor */
   position: relative;
   overflow: visible;
-  padding: 5.5rem 0 4rem;    /* topo/baixo da seção */
+  padding: 5.5rem 0 4rem;
+ /* topo/baixo da seção */
 }
-
-/* responsivo */
-@media (max-width: 900px) {
-  .cinza { padding: 3.5rem 0 3rem; }
-  .cinza-inner { padding: 0 1rem; }
-  .cinza-pompom { left: 4%; top: 0.6rem; width: 130px; }
-  .cinza .section-title { font-size: 2rem; }
-  .cinza .section-text { max-width: 100%; }
-}
-
-
 
 
 /* css dos cards */
@@ -517,7 +512,7 @@ section.about {
   gap: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-  padding-bottom: 2rem;
+ padding-bottom: 2rem;
 }
 
 .card {
@@ -526,7 +521,7 @@ section.about {
   color: var(--midnight);
   text-align: left;
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card img {
@@ -535,7 +530,7 @@ section.about {
   padding:0%;
   left: 80%;
   display: absolute;
-}
+ }
 
 .card h3 {
   font-size: 1.5rem;
@@ -548,7 +543,7 @@ section.about {
 .card p {
   font-size: 1rem;
   line-height: 1.2;
-  color:#432DB6;
+ color:#432DB6;
 }
 
 .texto {
@@ -558,7 +553,7 @@ section.about {
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.3);
-}
+ }
 
 /* cores */
 .card.purple {
@@ -570,7 +565,7 @@ section.about {
   font-size: 1.5rem;
   margin-bottom: 0.4rem;
   color: white;
-  font-family: 'BPreplay';
+ font-family: 'BPreplay';
 }
 
 
@@ -586,17 +581,34 @@ section.about {
 
 .card.lime {
   background: #d0ff57;
-  padding-top: 3rem;
+ padding-top: 3rem;
 }
+
+/* ================================================== */
+/* AQUI ESTÁ A CORREÇÃO da "quebra" */
+/* ================================================== */
 
 .section-title {
   color: var(--purple);
   font-size: 3.25rem;
-  text-align: center;
+  text-align: center; /* Padrão centralizado */
   margin-bottom: 1rem;
   font-family: 'Bangers', regular;
   font-style: normal;
+ }
+
+/* Regra específica para o .about .section-title */
+.about .section-title {
+  /* Estilos de título normais, alinhados à esquerda */
+  color: var(--purple);
+  font-size: 3.25rem;
+  text-align: left; /* Alinha à esquerda, dentro da coluna de texto */
+  margin-bottom: 1rem;
+  font-family: 'Bangers', regular;
+  font-style: normal;
+  /* As propriedades 'position: absolute' etc. foram removidas */
 }
+
 
 .subtitle {
   color: var(--purple);
@@ -608,7 +620,7 @@ section.about {
 
 .subtitle.right {
   text-align: right;
-}
+ }
 
 .section-text {
   max-width: 40rem;
@@ -621,7 +633,7 @@ section.about {
 
 .section-text.center {
   text-align: center;
-  padding: 2rem 2rem;
+ padding: 2rem 2rem;
   color: var(--purple);
   max-width: none
 }
@@ -632,7 +644,7 @@ section.about {
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
-  max-width: 1200px;
+ max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -644,7 +656,7 @@ section.about {
 .about-container-ghastcore {
   position: relative;
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
   max-width: 1200px;
@@ -654,7 +666,7 @@ section.about {
 .about-container-ghastcore.reverse {
   align-items: right;
   gap: 12rem;
-}
+ }
 
 
 .title-ghastcore {
@@ -665,7 +677,7 @@ section.about {
   font-family: 'Bangers', cursive;
   font-style: normal;
   position: absolute;
-  padding: 2rem 1rem;
+ padding: 2rem 1rem;
   top: 0;
   left: 0;
   width: 100%;
@@ -676,7 +688,7 @@ section.about {
 .title-princesa {
   color: #432DB6;
   font-size: 3.5rem;
-  font-family: 'Bangers', cursive;
+ font-family: 'Bangers', cursive;
   text-align: center;
   margin-bottom: 3rem;
   letter-spacing: 1px;
@@ -690,7 +702,7 @@ section.about {
   color: var(--azuzinho);
   font-size: 2.5rem;;
   margin-top: 1.5rem;
-  font-family: 'Bangers', cursive;
+ font-family: 'Bangers', cursive;
   font-style: normal;
 }
 
@@ -700,7 +712,7 @@ section.about {
   margin-bottom: 1.5rem;
   line-height: 1.7;
   color: var(--azuzinho);
-  font-family: 'BPreplay', sans-serif;
+ font-family: 'BPreplay', sans-serif;
 }
 
 
@@ -712,13 +724,25 @@ section.about {
   line-height: 1.7;
   color: var(--purple);
   font-family: 'BPreplay', sans-serif;
-}
+ }
 
+/* AQUI TAMBÉM FOI CORRIGIDO */
 .about-text {
   flex: 1;
   min-width: 280px;
-  padding-top: 6rem;
+  /* O 'padding-top: 6rem' foi removido */
 }
+
+.about iframe {
+  display: block;
+  margin: 3rem auto;
+  width: 80%;
+ max-width: 900px;
+  aspect-ratio: 16 / 9;
+  border-radius: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  border: none;
+ }
 
 .about iframe {
   display: block;
@@ -727,36 +751,17 @@ section.about {
   max-width: 900px;
   aspect-ratio: 16 / 9;
   border-radius: 20px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   border: none;
 }
 
-.about iframe {
-  display: block;
-  margin: 3rem auto;
-  width: 80%;
-  max-width: 900px;
-  aspect-ratio: 16 / 9;
-  border-radius: 20px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
-  border: none;
-}
-.about .section-title {
-  position: absolute;
-  padding: 2rem 1rem;
-  top: 0;
-  left: 0;
-  width: 100%;
-  text-align: center;
-}
 
 .about-photo-chloe,
 .about-photo-desenho {
   flex: 1;
   min-width: 300px;
   text-align: center;
-
-}
+ }
 
 .about-photo-chloe img {
   max-width: 100%;
@@ -768,7 +773,7 @@ section.about {
   max-width: 100%;
   margin-top: 30%;
   height: auto;
-}
+ }
 
 .about-chloe{
   flex: 1;
@@ -780,7 +785,7 @@ section.about {
   max-width: 100%;
   margin-top: 0%;
   height: auto;
-}
+ }
 .about-photo-pompom {
   flex: 1;
   min-width: 300px;
@@ -791,7 +796,7 @@ section.about {
   max-width: 100%;
   margin-top: 20%;
   height: auto;
-}
+ }
 
 .geral-title {
   color: var(--neon-pink);
@@ -801,7 +806,7 @@ section.about {
   text-align: center;
   margin-bottom: 2rem;
   padding: 1.5rem 1.5rem;
-}
+ }
 
 .grid-embeds {
   display: grid;
@@ -811,7 +816,7 @@ section.about {
   align-items: start;
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+ padding: 1.5rem 1rem;
 }
 
 .embed {
@@ -822,7 +827,7 @@ section.about {
   max-width: 360px;
   border-radius: 16px;
   padding: 0.75rem;
-}
+ }
 
 .embed iframe {
   width: 100%;
@@ -830,7 +835,7 @@ section.about {
   border-radius: 12px;
   background-color: #d9d9d9;
   border: none;
-}
+ }
 
 .embed p {
   margin-top: 0.8rem;
@@ -842,7 +847,7 @@ section.about {
 
 .about-embeds {
   padding: 3rem 1rem;
-  text-align: center;
+ text-align: center;
 }
 
 /* footer geral */
@@ -854,7 +859,7 @@ section.about {
 .footer-content {
   display: flex;
   align-items: center;
-  justify-content: center;
+ justify-content: center;
   gap: 6rem;
   max-width: 1300px;
   margin: 0 auto;
@@ -865,7 +870,7 @@ section.about {
 .footer-logo {
   height: 90px;
   width: auto;
-}
+ }
 
 .footer-block {
   display: flex;
@@ -877,7 +882,7 @@ section.about {
 .footer-text {
   font-family: 'BPreplay', sans-serif;
   color: #bdf3ff;
-  text-transform: uppercase;
+ text-transform: uppercase;
   font-size: 0.9rem;
   margin: 0;
 }
@@ -886,13 +891,13 @@ section.about {
   display: flex;
   gap: 1rem;
   justify-content: center;
-}
+ }
 
 .footer-icons i {
   font-size: 1.8rem;
   color: #bdf3ff;
   transition: transform 0.2s ease, opacity 0.2s ease;
-}
+ }
 
 .footer-icons i:hover {
   transform: scale(1.1);
@@ -902,78 +907,7 @@ section.about {
 .footer-princesa {
   height: 100px;
   width: auto;
-}
-
-/* Responsivo */
-@media (max-width: 900px) {
-
-  /* --- Navegação --- */
-  .navbar {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  .nav-links {
-    margin-left: 0;
-    display: flex;
-    gap: 0.5rem;
-  }
-
-
-
-  /* --- Títulos Grandes --- */
-  .hero-title {
-    font-size: 3rem; 
-  }
-  .section-title, .geral-title {
-    font-size: 2.5rem;
-    padding: 1.5rem 1rem;
-  }
-
-  /* --- Seção Sobre Mim --- */
-  .about-container {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 1rem;
-  }
-  .about-container.reverse {
-    flex-direction: column-reverse;
-    gap: 2rem;
-  }
-
-  .about-text {
-    padding-top: 0;
-    flex: 1;
-    min-width: 300px; 
-  }
-  .about .section-title {
-    position: static; 
-    padding: 2rem 1rem 1rem 1rem;
-  }
-
-  .about-photo-chloe img,
-  .about-photo-desenho img {
-    max-width: 80%;
-  }
-
-  /* --- Vídeo do YouTube --- */
-  .about iframe {
-    width: 95%;
-  }
-
-  /* --- Grid de Vídeos do Final --- */
-  .grid-embeds {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  /* --- Rodapé --- */
-  .footer-content {
-    flex-direction: column;
-    gap: 2.5rem; 
-  }
-}
+ }
 
 .exp iframe {
   display: block;
@@ -982,14 +916,15 @@ section.about {
   max-width: 900px;
   aspect-ratio: 16 / 9;
   border-radius: 20px;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+ box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
   border: none;
 }
 
 .galeria-ghast {
   background-image: url('src/imagens/GHAST_Background_LightBlue.svg');
   background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
+  background-color: #e0f7ff;
+ /* Um azul bem clarinho */
   padding: 4rem 1rem 6rem;
   text-align: center;
   position: relative;
@@ -997,7 +932,7 @@ section.about {
 
 .galeria-container {
   max-width: 1200px;
-  margin: 0 auto;
+ margin: 0 auto;
 }
 
 .galeria-title {
@@ -1006,7 +941,7 @@ section.about {
   font-size: 2.8rem;
   margin-bottom: 2.5rem;
   letter-spacing: 1px;
-}
+ }
 
 .galeria-grid {
   display: grid;
@@ -1017,28 +952,19 @@ section.about {
 
 .instagram-media {
   width: 100% !important;
-  min-width: 320px !important;
+ min-width: 320px !important;
   max-width: 400px !important;
   border-radius: 12px !important;
   background: #fff;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+ transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
 .instagram-media:hover {
   transform: scale(1.03);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
+ }
 
-@media (max-width: 800px) {
-  .galeria-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .galeria-title {
-    font-size: 2.2rem;
-  }
-}
 
 /* ============================================= */
 /* =========== PÁGINA DE MERCHANDISE =========== */
@@ -1047,19 +973,20 @@ section.about {
 /* Fundo da página de Merch */
 body.merch-page {
   background-image: url('src/imagens/GHAST_Background_Green.svg');
-  background-repeat: repeat;
+ background-repeat: repeat;
   background-size: 80px;
   background-color: #e0f7ff; /* Um azul bem clarinho */
-  color: var(--purple); /* Cor de texto padrão para esta página */
+  color: var(--purple);
+ /* Cor de texto padrão para esta página */
 }
 
 /* Container principal para posicionar elementos flutuantes */
 .merch-page-container {
   position: relative;
-  width: 100%;
+ width: 100%;
   overflow: hidden; /* Garante que as imagens não "vazem" e criem scrollbars */
   padding-bottom: 4rem;
-}
+ }
 
 /* Header (Título) */
 .merch-header {
@@ -1069,7 +996,7 @@ body.merch-page {
   gap: 2rem;
   text-align: center;
   padding: 2rem 2rem;
-  position: relative;
+ position: relative;
   z-index: 10;
 }
 
@@ -1077,24 +1004,25 @@ body.merch-page {
   font-family: 'Bangers';
   font-size: 5rem; /* Tamanho grande */
   color: var(--purple);
-}
+ }
 
 .merch-header p {
   font-family: 'BPreplay', sans-serif;
   font-size: 1.rem;
-  margin-top: 1rem; /* Aproxima o parágrafo do título */
+  margin-top: 1rem;
+ /* Aproxima o parágrafo do título */
   color: var(--purple);
 }
 
 /* Grade de Produtos */
 .merch-grid {
   display: flex;
-  justify-content: center;
+ justify-content: center;
   align-items: flex-start;
   gap: 2.5rem;
   flex-wrap: wrap; /* Permite que os itens quebrem para a linha de baixo em telas menores */
   padding: 2rem 1rem;
-  position: relative;
+ position: relative;
   z-index: 10;
 }
 
@@ -1106,13 +1034,13 @@ body.merch-page {
 }
 .merch-item-image {
   width: 280px;
-  height: 350px;
+ height: 350px;
   background-color: #c9f9ff;
   border: 4px solid #f29cff;
   border-radius: 25px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
-}
+ }
 
 .merch-item-link {
   text-decoration: none;
@@ -1123,7 +1051,7 @@ body.merch-page {
 }
 .merch-item-image:hover {
   transform: translateY(-5px) scale(1.02);
-}
+ }
 
 .merch-item-title {
   font-family: 'BPreplay', sans-serif;
@@ -1131,13 +1059,13 @@ body.merch-page {
   font-size: 1.25rem;
   color: var(--purple);
   padding: 1rem;
-}
+ }
 
 /* --- Elementos Decorativos Flutuantes --- */
 .deco-element {
   flex-shrink: 0;
   pointer-events: none;
-}
+ }
 
 /* Ajuste os valores de top/left/right/width conforme necessário */
 .deco-creature {
@@ -1147,30 +1075,9 @@ body.merch-page {
 
 .deco-chloe-pose {
   width: 280px;
-  transform: rotate(2deg);
+ transform: rotate(2deg);
 }
 
-
-/* Responsividade para a página de Merch */
-@media (max-width: 900px) {
-  .merch-header h1 {
-    font-size: 3.5rem;
-    -webkit-text-stroke: 2px var(--white);
-  }
-
-  /* Esconder ou diminuir elementos decorativos em telas pequenas */
-  .deco-creature {
-    top: 100px;
-    left: 2%;
-    width: 120px;
-  }
-  .deco-chloe-pose {
-    top: 80px;
-    right: 2%;
-    width: 150px;
-  }
-
-}
 /* ========================================= */
 /* =========== PÁGINA DE CONTATO =========== */
 /* ========================================= */
@@ -1178,22 +1085,16 @@ body.merch-page {
 /* Fundo da página de Contato */
 body.contato-page {
   background-image: url('src/imagens/GHAST_Background_Pink.svg');
-  background-repeat: repeat;
-  background-color: #e0f7ff; /* Um azul bem clarinho */
-}
-
-/* Navbar específica para a página de contato */
-.navbar-contato {
-  background-image: url('src/imagens/GHAST_Background_Pink.svg');
-  background-repeat: repeat;
+ background-repeat: repeat;
   background-color: #e0f7ff; /* Um azul bem clarinho */
 }
 
 .contato-container {
   position: relative;
-  overflow-x: hidden; /* Evita scroll horizontal por causa dos elementos flutuantes */
+  overflow-x: hidden;
+ /* Evita scroll horizontal por causa dos elementos flutuantes */
   padding: 2rem 0;
-}
+ }
 
 /* Seção "Conheça a Chloe" */
 .conheca-chloe {
@@ -1202,7 +1103,7 @@ body.contato-page {
   justify-content: center;
   gap: 2rem;
   padding: 3rem 2rem;
-  max-width: 1200px;
+ max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 10;
@@ -1211,7 +1112,7 @@ body.contato-page {
 .conheca-imagem img {
   max-width: 450px;
   filter: drop-shadow(5px 5px 15px rgba(0,0,0,0.2));
-}
+ }
 
 .conheca-texto {
   max-width: 500px;
@@ -1222,7 +1123,7 @@ body.contato-page {
   font-size: 3.5rem;
   color: #B9F5FF;
   line-height: 1.1;
-  text-shadow: 3px 3px 0px var(--purple);
+ text-shadow: 3px 3px 0px var(--purple);
   margin-bottom: 1rem;
 }
 
@@ -1231,7 +1132,7 @@ body.contato-page {
   font-size: 1.1rem;
   line-height: 1.6;
   color: var(--purple);
-  margin-bottom: 1.5rem;
+ margin-bottom: 1.5rem;
 }
 
 .social-icons-contato {
@@ -1243,7 +1144,7 @@ body.contato-page {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 45px;
+ width: 45px;
   height: 45px;
   background-color: #fff;
   border-radius: 50%;
@@ -1253,7 +1154,7 @@ body.contato-page {
 
 .social-icons-contato i {
   color: var(--purple);
-  font-size: 1.5rem;
+ font-size: 1.5rem;
 }
 
 .social-icons-contato a:hover {
@@ -1263,16 +1164,17 @@ body.contato-page {
 /* Seção do Formulário */
 .form-section {
   text-align: center;
-  padding: 4rem 1rem 6rem 1rem;
+ padding: 4rem 1rem 6rem 1rem;
   background: url('src/imagens/divisoria-serrilhada-contato.svg') repeat-x top center;
-  background-size: auto 60px; /* Ajuste a altura da sua divisória */
+  background-size: auto 60px;
+ /* Ajuste a altura da sua divisória */
   position: relative;
   z-index: 10;
 }
 
 .form-section h2 {
   font-family: 'Bangers', cursive;
-  font-size: 3rem;
+ font-size: 3rem;
   color: var(--purple);
   margin-bottom: 2rem;
 }
@@ -1283,7 +1185,7 @@ body.contato-page {
   margin: 0 auto;
   border-radius: 20px;
   padding: 2.5rem;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+ box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   text-align: left;
 }
 
@@ -1292,7 +1194,7 @@ body.contato-page {
   font-size: 1.8rem;
   color: var(--midnight);
   margin-bottom: 2rem;
-}
+ }
 
 .form-grid {
   display: grid;
@@ -1303,7 +1205,7 @@ body.contato-page {
 .form-group {
   display: flex;
   flex-direction: column;
-}
+ }
 
 .form-group.full-width {
   grid-column: 1 / -1; /* Ocupa a largura toda */
@@ -1312,20 +1214,20 @@ body.contato-page {
 .form-group input,
 .form-group textarea {
   width: 100%;
-  padding: 1rem;
+ padding: 1rem;
   border: 2px solid #e0e0e0;
   border-radius: 10px;
   font-family: 'BPreplay', sans-serif;
   font-size: 1rem;
   background-color: #f7f7f7;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+ transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
   border-color: var(--purple);
-  box-shadow: 0 0 0 3px rgba(67, 45, 182, 0.2);
+ box-shadow: 0 0 0 3px rgba(67, 45, 182, 0.2);
 }
 
 .submit-button-container {
@@ -1333,18 +1235,19 @@ body.contato-page {
 }
 
 .form-group button {
-  background-color: #3b82f6; /* Azul do botão */
+  background-color: #3b82f6;
+ /* Azul do botão */
   color: white;
   font-family: 'BPreplay', sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   padding: 0.8rem 2.5rem;
   border: none;
-  border-radius: 50px;
+ border-radius: 50px;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
   box-shadow: 0 4px 10px rgba(59, 130, 246, 0.4);
-}
+ }
 
 .form-group button:hover {
   background-color: #2563eb;
@@ -1357,149 +1260,398 @@ body.contato-page {
 .deco-element-contato {
   position: absolute;
   z-index: 1;
-  pointer-events: none;
+ pointer-events: none;
 }
 
+/* --- Galeria Masonry (Página GhastCore) --- */
 
-/* Responsividade */
+.mural-container {
+
+  position: relative;
+
+  max-width: 1400px;
+ margin: 0 auto;
+  padding: 1rem;
+}
+
+.grid-sizer,
+.mural-item {
+  width: 23%;
+ margin-bottom: 1rem; /* Espaço abaixo de cada foto */
+}
+
+.mural-item {
+  margin-bottom: 16px;
+ overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+ background: white;
+}
+
+.mural-item.small { height: 180px;
+ }
+.mural-item.medium { height: 280px;
+ }
+.mural-item.large { height: 400px;
+ }
+
+
+.mural-item img {
+  width: 100%;
+ height: 100%;
+  object-fit: cover;   /* Preenche todo o bloco */
+  display: block;
+ }
+
+.mural-item:hover {
+  transform: scale(1.03);
+ box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* --- Lightbox (Galeria) --- */
+
+#lightbox-modal {
+  display: none;
+ /* Escondido inicialmente */
+  position: fixed;
+ z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+ }
+
+/* Fundo preto semi-transparente */
+.lightbox-overlay {
+  position: absolute;
+ width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+ /* Permite fechar clicando no fundo */
+}
+
+/* A imagem ampliada */
+#lightbox-img {
+  position: relative;
+ /* Fica na frente do overlay */
+  z-index: 1001;
+ /* Limita o tamanho da imagem */
+  max-width: 90vw;
+ /* 90% da largura da tela */
+  max-height: 90vh;
+ /* 90% da altura da tela */
+  
+}
+
+/* Botão de fechar (X) */
+.lightbox-close {
+  position: absolute;
+ z-index: 1002;
+  top: 20px;
+  right: 30px;
+  color: var(--white);
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+ text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.lightbox-close:hover {
+  opacity: 0.8;
+ }
+
+
+/* parte responsiva */
 @media (max-width: 900px) {
+
+  /* --- GERAL (TODAS AS PÁGINAS) --- */
+  .navbar,
+  .navbar-ghastcore,
+  .navbar-merch,
+  .navbar-contato {
+    flex-direction: column;
+ gap: 1rem;
+    padding: 1rem;
+  }
+  
+  .logo {
+    height: 80px; /* Logo menor no mobile */
+  }
+
+  .nav-links {
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar a linha se não couber */
+    gap: 0.5rem;
+ }
+  
+  .nav-links a {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.6rem;
+    margin-left: 0.5rem;
+  }
+
+  .section-title, .geral-title {
+    font-size: 2.5rem;
+    padding: 1.5rem 1rem;
+ }
+  
+  /* --- Rodapé --- */
+  .footer-content {
+    flex-direction: column;
+    gap: 2.5rem;
+ }
+  
+  .footer-logo {
+    height: 80px; /* Logo do footer menor */
+  }
+  
+  .footer-princesa {
+    height: 90px; /* Imagem princesa menor */
+  }
+
+
+  /* --- PÁGINA: HOME (index.html) --- */
+  
+  .hero-title {
+    font-size: 2.75rem; /* Título principal menor */
+ }
+
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+ text-align: center;
+    gap: 1rem;
+    padding: 0 1rem; /* Adiciona padding lateral */
+  }
+  
+  .about-container.reverse {
+    flex-direction: column-reverse;
+    gap: 2rem;
+ }
+
+  .about-text {
+    padding-top: 0;
+    flex: 1;
+    min-width: 100%; /* Ocupa 100% da largura */
+ }
+  
+  /* CORREÇÃO DA PARTE RESPONSIVA */
+  .about .section-title {
+    position: static; 
+    padding: 0 0 1rem 0; /* Limpa o padding antigo */
+    text-align: center; /* Garante que centralize no mobile */
+ }
+  
+  .subtitle.right,
+  .section-text.right {
+    text-align: center; /* Centraliza o texto "A PRINCESA CHEGOU" */
+  }
+
+  .about-photo-chloe img,
+  .about-photo-desenho img {
+    max-width: 80%;
+    margin-top: 1rem; /* Reduz margem superior */
+ }
+
+  .about iframe {
+    width: 95%;
+ }
+
+  .grid-embeds {
+    grid-template-columns: 1fr;
+ gap: 2rem;
+  }
+
+  
+  /* --- PÁGINA: GHASTCORE (ghastcore.html) --- */
+
+  .cinza { 
+    padding: 3.5rem 0 3rem;
+ }
+    
+  .cinza-inner { 
+    padding: 0 1rem; 
+    text-align: center; /* Centraliza o texto */
+  }
+  
+  .cinza .section-title {
+    font-size: 2.2rem;
+    text-align: center; /* Centraliza o título */
+  }
+  
+  .cinza .section-text { 
+    max-width: 100%;
+    text-align: center; /* Centraliza o texto */
+ }
+
+  .cinza-pompom { 
+    left: 2%; /* Move um pouco mais */
+    top: 0.6rem; 
+    width: 120px; /* Pompom menor */
+ }
+    
+  .flores {
+    width: 300px; /* Imagem de flor menor */
+    height: 200px;
+    background-size: 100%; /* Garante que ela caiba */
+  }
+  
+  .about-container-ghastcore {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+  
+  .about-container-ghastcore.reverse {
+    flex-direction: column-reverse; /* Empilha na ordem invertida */
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+  
+  .title-ghastcore {
+    position: static; /* Tira do "absolute" */
+    padding: 2rem 1rem 1rem;
+    font-size: 2.5rem;
+  }
+  
+  .section-text-ghastcore {
+    max-width: 100%; /* Ocupa largura total */
+  }
+
+  .about-photo-pompom img {
+    max-width: 80%;
+    margin-top: 1rem;
+  }
+  
+  .title-princesa {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+  }
+  
+  .about-chloe img {
+    max-width: 80%; /* Imagem princesa menor */
+  }
+  
+  .section-text-princesa {
+    text-align: center; /* Centraliza texto */
+  }
+  
+  .exp iframe {
+    width: 95%; /* Iframe do youtube */
+  }
+  
+  /* Galeria Mural (Masonry) */
+  .galeria-title {
+    font-size: 2.2rem;
+ }
+    
+  .mural-container {
+    padding: 0; /* Remove padding lateral no container */
+  }
+  
+  .mural-item,
+  .grid-sizer {
+    width: 48%; /* 2 colunas */
+    margin-bottom: 1rem;
+ }
+
+
+  /* --- PÁGINA: MERCH (merch.html) --- */
+
+  .merch-header {
+    flex-direction: column; /* Empilha título e texto */
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+  
+  .merch-header h1 {
+    font-size: 3rem; /* Título menor */
+ -webkit-text-stroke: 1px var(--white); /* Borda mais fina */
+  }
+  
+  .merch-header p {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+
+  .deco-element {
+    display: none; /* Esconde as imagens decorativas no mobile */
+  }
+
+  .merch-grid {
+    gap: 1.5rem; /* Diminui espaço entre itens */
+  }
+
+
+  /* --- PÁGINA: CONTATO (contato.html) --- */
+
   .conheca-chloe {
     flex-direction: column;
     text-align: center;
-  }
-  .social-icons-contato {
-    justify-content: center;
-  }
+    padding: 2rem 1rem;
+ }
+    
   .conheca-imagem img {
-    max-width: 300px;
+    max-width: 300px; /* Imagem da Chloe menor */
+ }
+    
+  .conheca-texto h1 {
+    font-size: 2.5rem; /* Título menor */
   }
+  
+  .social-icons-contato {
+    justify-content: center; /* Centraliza ícones sociais */
+  }
+
+  .form-section {
+    padding: 4rem 1rem 4rem 1rem; /* Ajusta padding */
+  }
+  
+  .form-section h2 {
+    font-size: 2.2rem; /* Título do formulário menor */
+  }
+  
+  .form-wrapper {
+    padding: 1.5rem; /* Padding interno do formulário */
+  }
+  
   .form-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Coluna única no formulário */
   }
 }
 
-
-        /* --- 1. O GRID (MURAL) --- */
-        
-        .mural-container {
-            /* A mágica do Masonry/Mural acontece aqui! */
-            /* Removemos o column-count */
-            position: relative; /* Necessário para o Masonry */
-            
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 1rem;
-        }
-
-        /* * O .grid-sizer e .mural-item definem a largura das colunas.
-         * Ex: 23% ~ 4 colunas com espaço
-         */
-        .grid-sizer,
-        .mural-item {
-            width: 23%;
-            margin-bottom: 1rem; /* Espaço abaixo de cada foto */
-        }
-
-        .mural-item {
-            margin-bottom: 16px;
-            overflow: hidden;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-            background: white;
-        }
-
-        .mural-item.small { height: 180px; }
-        .mural-item.medium { height: 280px; }
-        .mural-item.large { height: 400px; }
-
-
-        .mural-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;   /* Preenche todo o bloco */
-            display: block;
-        }
-
-        .mural-item:hover {
-            transform: scale(1.03);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-        }
-
-        /* Deixa o mural responsivo */
-        @media (max-width: 1200px) {
-            .mural-container {
-                /* 3 colunas em telas médias */
-                grid-template-columns: repeat(3, 1fr);
-            }
-            .grid-sizer, .mural-item { width: 31%; }
-        }
-
-        @media (max-width: 800px) {
-            .mural-container {
-                /* 2 colunas em tablets */
-                grid-template-columns: repeat(2, 1fr);
-            }
-            .grid-sizer, .mural-item { width: 48%; }
-        }
-
-        @media (max-width: 500px) {
-            .mural-container {
-                /* 1 coluna em celulares */
-                grid-template-columns: 1fr;
-            }
-            .grid-sizer, .mural-item { width: 100%; }
-        }
-
-        /* --- 2. O LIGHTBOX (MODAL DE FOTO GRANDE) --- */
-
-        #lightbox-modal {
-              display: none; /* Escondido inicialmente */
-              position: fixed;
-              z-index: 1000;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-              justify-content: center;
-              align-items: center;
-        }
-
-        /* Fundo preto semi-transparente */
-        .lightbox-overlay {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            backdrop-filter: blur(5px);
-            cursor: pointer; /* Permite fechar clicando no fundo */
-        }
-
-        /* A imagem ampliada */
-        #lightbox-img {
-            position: relative; /* Fica na frente do overlay */
-            z-index: 1001;
-            
-            /* Limita o tamanho da imagem */
-            max-width: 90vw;  /* 90% da largura da tela */
-            max-height: 90vh; /* 90% da altura da tela */
-            
-        }
-
-        /* Botão de fechar (X) */
-        .lightbox-close {
-            position: absolute;
-            z-index: 1002;
-            top: 20px;
-            right: 30px;
-            color: var(--white);
-            font-size: 3rem;
-            font-family: sans-serif;
-            font-weight: bold;
-            cursor: pointer;
-            text-shadow: 0 0 10px rgba(0,0,0,0.5);
-        }
-        
-        .lightbox-close:hover {
-            opacity: 0.8;
-        }
+/* Regra extra para celulares bem pequenos */
+@media (max-width: 500px) {
+  .mural-item,
+  .grid-sizer {
+    width: 98%; /* 1 coluna na galeria */
+ }
+    
+  .hero-title {
+    font-size: 2.2rem; /* Título ainda menor */
+  }
+  
+  .section-title, .geral-title {
+    font-size: 2rem;
+  }
+  
+  .grid-embeds {
+    gap: 1rem;
+  }
+  
+  .embed {
+    padding: 0.5rem;
+  }
+}
