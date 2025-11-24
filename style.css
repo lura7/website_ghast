@@ -609,7 +609,7 @@ section.about{
   right:0;
   width:800px;
   height:600px;
-  background:url("src/imagens/flores.web") no-repeat bottom right;
+  background:url("src/imagens/flores.webp") no-repeat bottom right;
   background-size:contain;
   z-index:1;
   transition:background-image 0.3s ease; 
