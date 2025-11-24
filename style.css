@@ -609,14 +609,14 @@ section.about{
   right:0;
   width:800px;
   height:600px;
-  background:url("src/imagens/flores.svg") no-repeat bottom right;
+  background:url("src/imagens/flores.web") no-repeat bottom right;
   background-size:contain;
   z-index:1;
   transition:background-image 0.3s ease; 
 }
 
 .flores:hover{
-  background:url("src/imagens/flores_hover.svg") no-repeat bottom right;
+  background:url("src/imagens/flores_hover.webp") no-repeat bottom right;
   background-size:contain;
 }
 
