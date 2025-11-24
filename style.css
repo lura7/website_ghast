@@ -431,7 +431,7 @@ section.about{
 
 @keyframes about-ghastcore-bg-move {
   from { background-position: 0 0; }
-  to   { background-position: +800px +800px; }
+  to   { background-position: -800px -800px; }
 }
 
 
