@@ -424,20 +424,10 @@ section.about{
   background-color:#e0f7ff;
   padding-bottom:2rem;
   background-position: 0 0;
-  animation: about-ghastcore-bg-move 30s linear infinite;
-  will-change: background-position;
 }
 
 
-@keyframes about-ghastcore-bg-move {
-  from { background-position: 0 0; }
-  to   { background-position: -800px -800px; }
-}
 
-
-@media (prefers-reduced-motion: reduce) {
-  .about-ghastcore { animation: none !important; }
-}
 .about-outro{
   background-image:url('src/imagens/GHAST_Background_Purple.svg');
   background-size:80px;
@@ -447,21 +437,10 @@ section.about{
   z-index: 0;
 
 
-  background-position: 0 0;
-  animation: about-outro-bg-move 30s linear infinite;
-  will-change: background-position;
+
 }
 
 
-@keyframes about-outro-bg-move {
-  from { background-position: 0 0; }
-  to   { background-position: -800px -800px; }
-}
-
-
-@media (prefers-reduced-motion: reduce) {
-  .about-outro { animation: none !important; }
-}
 
 
 .about-embeds{
